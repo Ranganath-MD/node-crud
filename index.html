@@ -2,18 +2,93 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Sample Site</title>
+    <title>NodeJs Rest api</title>
 
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
     <style>
-        body { padding-top:50px; }
+        body {
+            background: url("https://github.com/images/modules/site/heroes/simple-codelines.svg"),#2b3137;
+            background-position: center 10%;
+            background-size: cover;
+        }
+        h1{
+            font-family: monospace;
+            font-size: 55px;
+            font-weight: bold;
+            text-align: center;
+            margin-top: 150px;
+            color: white;
+        }
+        h3{
+            text-align: center;
+            margin-bottom: 30px;
+            color: white;
+        }
+
+        .get{
+            font-size: 20px;
+            color:green;
+            font-weight: bold;
+        }
+        .put{
+            font-size: 20px;
+            color:orange;
+            font-weight: bold;
+        }
+        .post{
+            font-size: 20px;
+            color:blue;
+            font-weight: bold;
+        }
+        .delete{
+            font-size: 20px;
+            color:red;
+            font-weight: bold;
+        }
+        .url{
+            font-size: 16px;
+            font-weight: 500;
+            color: green;
+            margin-left: 25px;
+        }
+        .card {
+            background-color: rgb(255, 255, 255);
+            padding: 20px 25px;
+            margin-top: 10px;
+            margin-left: 10%;
+        }
+
     </style>
 </head>
 <body>
 
     <div class="container">
-        <div class="jumbotron">
-            <h1>res.sendFile() Works!</h1>
+        <h1>REST API using NodeJS</h1>
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-xs-12 col-sm-10 col-md-8 col-lg-6">
+                <h3>Available endpoints</h3>
+                <div>
+                    <div class="card">
+                        <span class="get">GET</span>
+                        <a href="https://node-crud-2020.herokuapp.com/users"><span class="url">https://node-crud-2020.herokuapp.com/users</span></a><br/>
+                    </div>
+                    <div class="card">
+                        <span class="put">PUT</span>
+                        <a href="https://node-crud-2020.herokuapp.com/users"><span class="url">https://node-crud-2020.herokuapp.com/users</span></a><br/>
+                    </div>
+                    <div class="card">
+                        <span class="post">POST</span>
+                        <a href="https://node-crud-2020.herokuapp.com/users"><span class="url">https://node-crud-2020.herokuapp.com/users/:id</span></a><br/>
+                    </div>
+                    <div class="card">
+                        <span class="delete">DELETE</span>
+                        <a href="https://node-crud-2020.herokuapp.com/users"><span class="url">https://node-crud-2020.herokuapp.com/users/:id</span></a><br/>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-sm-3"></div>
         </div>
     </div>
 
