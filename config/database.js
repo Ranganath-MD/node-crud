@@ -1,8 +1,8 @@
-const mongoose = require("mongoose")
 const dotenv = require("dotenv");
 dotenv.config();
+const mongoose = require("mongoose")
 mongoose.Promise = global.Promise
-
+console.log(process.env.MongoDB)
 //connecting to mongodb
 const CONNECTION_URI = process.env.MongoDB || 'mongodb://localhost:27017/node-crud'
 mongoose
