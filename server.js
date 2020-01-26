@@ -9,6 +9,10 @@ app.use(express.json())
 app.use(cors())
 app.use("/users", usersRouter)
 
+app.get('/', function (req, res) {
+    res.send("CRUD app using Node");
+});
+
 app.listen(port, () => {
     console.log("listening on port ", port)
 })
