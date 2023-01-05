@@ -4,7 +4,7 @@ const mongoose = require("mongoose")
 mongoose.Promise = global.Promise
 
 //connecting to mongodb
-const CONNECTION_URI = process.env.MongoDB || 'mongodb://localhost:27017/node-crud'
+const CONNECTION_URI = 'mongodb+srv://ranganathmd:uOgKDhu9ZAhmOrnv@developeracc.xzfvx.mongodb.net/?retryWrites=true&w=majority'
 mongoose
     .connect( CONNECTION_URI, {
         useNewUrlParser: true,
