@@ -69,8 +69,8 @@ router.put('/:id', (req, res) => {
 router.delete('/:id', (req, res) => {
     const id = req.params.id
     User.findByIdAndDelete(id)
-        .then(user => {
-            res.send(user)
+        .then(() => {
+            res.send("user deleted successfully")
         })
         .catch(() => {
             res.send ({ message: "No record found with this id"})
